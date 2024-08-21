@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <!-- font awesome cdn-->
+    <script src="https://kit.fontawesome.com/4a23607b33.js" crossorigin="anonymous"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'color-primary': '#ABEF5F',
+                        'color-secondary': '#F4F4F4',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body class="font-manrope">
+    <header class="bg-gradient-to-b from-stone-100 to-white">
+        <section class="md:container mx-auto">
+            <nav>
+                <div class="navbar ">
+                    <div class="navbar-start">
+
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-color-primary text-black p-2 rounded-full"></i>
+                        <a class="btn btn-ghost text-xl">Rinterio</a>
+                    </div>
+
+
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a><b>Home</b></a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-3 invisible lg:visible">
+                        <i class="fa-solid fa-cart-shopping  bg-white text-black p-2 rounded-full"></i>
+                        <i class="fa-solid fa-magnifying-glass  bg-white text-black p-2 rounded-full"></i>
+                        <a class="btn bg-color-primary">Book Consultant
+                            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i>
+                        </a>
+                        <div class="visible lg:hidden">
+                            <details class="dropdown">
+                                <summary class="btn bg-white text rounded-full m-1"><i class="fa-solid fa-bars"></i>
+                                </summary>
+                                <!-- <ul
+                                    class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow origin-left">
+                                    <li><a><b>Home</b></a></li>
+                                    <li><a>Services</a></li>
+                                    <li><a>Portfolio</a></li>
+                                    <li><a>Blogs</a></li>
+                                    <li><a>Contact Us</a></li>
+                                </ul> -->
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- front page -->
+            <div class="">
+                <div class="flex justify-center">
+                    <img src="assets/banner.png" alt="">
+                </div>
+                <div class="text-center">
+                    <h1 class="text-3xl lg:text-5xl font-extrabold w-3/5 mx-auto my-5">A barn
+                        house of this design has a
+                        striking
+                        appearance
+                    </h1>
+                    <p class="w-3/5 mx-auto my-5">The barn house captivates with its blend of
+                        rustic charm and modern
+                        sophistication, featuring
+                        weathered
+                        wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                    <a class="btn bg-color-primary rounded-full">View Details
+                        <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-2 rounded-full"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="md:container mx-auto">
+        <!-- second page -->
+        <section class="my-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-5 ">
+                <div class="w-4/5 mx-auto">
+                    <div class="text-center lg:text-left space-y-4">
+                        <a class="btn bg-white "><i class="fa-solid fa-arrow-right"></i>About Us
+                        </a>
+                        <h1 class="text-4xl font-extrabold text-center lg:text-left">We design thoughtful, liveable
+                            spaces
+                        </h1>
+                        <p>The barn house captivates with its blend of rustic charm and
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
+                    <!-- two card -->
+                    <div class="">
+                        <!-- card 1 -->
+                        <div class="card card-side bg-base-100 shadow-xl w-full my-4">
+                            <figure class="ml-5">
+                                <img src="assets/commercial.png" alt="commertial" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title">New movie is released!</h2>
+                                <p>Click the button to watch on Jetflix app.</p>
+
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="card card-side bg-base-100 shadow-xl w-full">
+                            <figure class="ml-5">
+                                <img src="assets/residential.png" alt="residential" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title">New movie is released!</h2>
+                                <p>Click the button to watch on Jetflix app.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto w-4/5">
+                    <img src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+
+</html>
