@@ -37,6 +37,7 @@
                         'cards-col-four': '#77AAEA',
                         'connect-col': 'rgba(171, 239, 95, 0.2)',
                         'footer-col': 'rgba(28, 28, 28, 1)',
+                        'sec-bg-col': '#F4F4F4',
                     }
                 }
             }
@@ -117,10 +118,12 @@
 
     <main class="mx-auto">
         <!-- second page -->
-        <section class="my-24">
-            <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-5 ">
+        <section class="mt-24 bg-sec-bg-col w-full h-full">
+            <img class="lg:py-7 lg:pl-5 relative invisible lg:visible" src="assets/Vector.png" alt="">
+            <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-5 items-center ">
                 <div class="w-4/5 mx-auto">
                     <div class="text-center lg:text-left space-y-4">
+
                         <a class="btn bg-white rounded-full "><i class="fa-solid fa-arrow-right"></i>About Us
                         </a>
                         <h1 class="text-5xl font-extrabold text-center lg:text-left">We design thoughtful, liveable
@@ -155,6 +158,7 @@
                             </div>
                         </div>
                     </div>
+                    <br>
                 </div>
                 <div class="mx-auto w-4/5">
                     <img src="assets/Rectangle.png" alt="">
@@ -163,9 +167,9 @@
         </section>
 
         <!-- third page -->
-        <section>
+        <section class="bg-sec-bg-col w-full h-full">
             <div class="space-y-4 text-center">
-                <a class="btn bg-white rounded-full "><i class="fa-solid fa-arrow-right"></i>How we works
+                <a class="btn bg-white rounded-full mt-24 "><i class="fa-solid fa-arrow-right"></i>How we works
                 </a>
                 <h1 class="text-5xl flex justify-center font-extrabold lg:text-left">Our Works Process
                 </h1>
@@ -176,7 +180,7 @@
                     wood, sleek metal accents.</p>
             </div>
             <!-- cards -->
-            <div class="my-5 w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-4 overflow-hidden gap-10">
+            <div class="my-5 w-4/5 mx-auto grid grid-cols-1 lg:grid-cols-4 overflow-hidden gap-10 ">
 
                 <!-- card 1 -->
                 <div class="card bg-cards-col-one flex flex-col items-start pt-6 ">
@@ -230,6 +234,7 @@
                     </div>
                 </div>
             </div>
+            <br><br>
         </section>
 
         <!-- fourth page -->
@@ -246,19 +251,17 @@
                     weathered
                     wood, sleek metal accents.</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-4 w-4/5 mx-auto gap-4 mt-5 ">
+            <div class="grid grid-cols-1 lg:grid-cols-7 w-4/5 mx-auto gap-4 mt-5 ">
 
                 <!-- latest-card-1 -->
-                <div class="card card-side bg-base-100 h-auto border border-gray-400 lg:col-span-3">
-
+                <div
+                    class="card card-side bg-base-100 w-full  border border-gray-300 lg:col-span-4 flex flex-col lg:flex-row">
                     <figure class="w-full">
-                        <img class="p-5 border border-gray-400" src="assets/img1.png" alt="image-1" />
+                        <img class="object-fill h-full w-full p-4 " src="assets/img1.png" alt="image-1" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Commercial</h2>
-                        <p class="">The barn house captivates with its blend of rustic charm and modern. The barn
-                            house
-                            captivates with its blend of rustic charm and modern</p>
+                        <p class="">The barn house captivates with its blend of rustic charm and modern. </p>
                         <a href="#" class="text-xl font-bold">View Details <i
                                 class="fa-solid fa-arrow-right -rotate-45 bg-color-primary text-black p-2 rounded-full"></i>
                         </a>
@@ -267,31 +270,40 @@
                 </div>
 
                 <!-- latest-card-2 -->
-                <div class="card bg-base-100 border border-gray-400 flex items-center justify-center">
-                    <figure class="">
-                        <img src="assets/img2.png" alt="Shoes" />
+                <div class="card bg-base-100 border border-gray-300 flex items-center justify-center lg:col-span-3">
+                    <figure class="w-full">
+                        <img class="object-fill w-full h-full p-4" src="assets/img2.png" alt="Shoes" />
                     </figure>
 
                 </div>
 
-                <!-- latest-card-3 -->
-                <div class="card bg-base-100 border border-gray-400 flex items-center justify-center">
-                    <figure class="">
-                        <img src="assets/img3.png" alt="Shoes" />
+                <!-- latest-card-3 for small screen -->
+                <div class="card bg-base-100 border border-gray-300 flex items-center justify-center lg:hidden">
+                    <figure class="w-full">
+                        <img class="object-fill h-full w-full p-4" src="assets/img5.png" alt="Shoes" />
                     </figure>
 
                 </div>
+
+                <!-- latest card 3 for lg screen -->
+                <div
+                    class="card bg-base-100 border border-gray-300 flex items-center justify-center lg:col-span-2 lg:visible relative">
+                    <figure class="w-full">
+                        <img class="object-fill h-full w-full p-4" src="assets/img3.png" alt="Shoes" />
+                    </figure>
+
+                </div>
+
 
                 <!-- latest-card-4 -->
-                <div class="card card-side bg-base-100 h-auto border border-gray-400 lg:col-span-2">
+                <div
+                    class="card card-side bg-base-100 w-full  border border-gray-300 lg:col-span-3 flex flex-col lg:flex-row">
                     <figure class="w-full">
-                        <img class="p-5 border border-gray-400" src="assets/img4.png" alt="image-1" />
+                        <img class="object-fill h-full w-full p-4 " src="assets/img4.png" alt="image-1" />
                     </figure>
                     <div class="card-body">
                         <h2 class="card-title">Commercial</h2>
-                        <p class="">The barn house captivates with its blend of rustic charm and modern. The barn
-                            house
-                            captivates with its blend of rustic charm and modern</p>
+                        <p class="">The barn house captivates with its blend of rustic charm and modern. </p>
                         <a href="#" class="text-xl font-bold">View Details <i
                                 class="fa-solid fa-arrow-right -rotate-45 bg-color-primary text-black p-2 rounded-full"></i>
                         </a>
@@ -299,10 +311,19 @@
                     </div>
                 </div>
 
+                <!-- latest for only small screen -->
+                <div class="card bg-base-100 border border-gray-300 flex items-center justify-center lg:hidden">
+                    <figure class="w-full">
+                        <img class="object-fill h-full w-full p-4" src="assets/img3.png" alt="Shoes" />
+                    </figure>
+
+                </div>
+
+
                 <!-- latest-card-5 -->
-                <div class="card bg-base-100 border border-gray-400 flex items-center justify-center">
-                    <figure class="">
-                        <img src="assets/img5.png" alt="Shoes" />
+                <div class="card bg-base-100 border border-gray-300 flex items-center justify-center lg:col-span-2">
+                    <figure class="w-full">
+                        <img class="object-fill h-full w-full p-4" src="assets/img5.png" alt="Shoes" />
                     </figure>
 
                 </div>
@@ -311,7 +332,7 @@
 
 
         <!-- sixth page -->
-        <section class="w-full h-full bg-no-repeat bg-cover mx-0 my-0 border-gray-400"
+        <section class="w-full h-full bg-no-repeat bg-cover mx-0 my-0 border-gray"
             style="background-image: url(./assets/bg.jpg);">
 
             <div class="space-y-4 text-center">
@@ -359,7 +380,7 @@
                 <i class="fa-solid fa-arrow-right -rotate-45 bg-color-primary text-black p-2 rounded-full"></i>
                 <a class="btn btn-ghost text-xl mt-24">Rinterio</a>
 
-                <p class="w-4/5 mx-auto text-gray-400">The barn house captivates with its blend of rustic charm and
+                <p class="w-4/5 mx-auto text-gray">The barn house captivates with its blend of rustic charm and
                     modern
                     sophistication, featuring
                     weathered
